@@ -1,0 +1,31 @@
+Zadanie 1 
+
+1 - Jaki wpływ na jakość znalezienia drogi do frisbee ma wartość gamma?
+Odp: Im większa wartość gamma, tym lepsze wyszukiwanie jakości drogi.
+
+2 -  Czym różnią się metody policy_iteration oraz value_iteration? 
+Odp: Metoda policy_iteration jest złożonym algorytmem, który działa szybciej niż metoda value_iteration. Metoda policy_iteration rozpoczyna się od strategi losowości, nastomiast value_iteration rozpoczyna swoje działanie od funckji liczby losowej.
+Cechy policy_iteration: losowa strategia, szybsze działanie.
+Cechy value_iteration: funkcja liczbowa, wolniejszy.
+
+3 - Dlaczego value_iteration znajduje lepszą drogę niż policy_iteration?
+Odp: Skrypt value_iteration znajduje lepszą drogę niż policy_iteration, ponieważ większa ilość iteracji zmiania wartość stanu na wyższą, co ułatwia metodzie wybrać najlepszą drogę.
+
+
+
+Zadanie 2
+
+Wykonać to samo ćwiczenie co w zadaniu 1 ale dla jeziora o rozmiarze 10 x 10 i wartościach gamma [0, 0.2, 0.4, 0.6, 0.8, 1] oraz włączonym poślizgu na lodzie.
+
+1 - Jak poślizg na lodzie ma wpływ na skomplikowanie trasy?
+Odp: Skrypt przy włączonym poślizgu, skrpt wciąż działa poprawnie, lecz wyszukiwanie drogi jest dużo bardziej skomplikowane.
+
+2 - Czy wartość gamma ma wpływ na skomplikowanie trasy, a jeżeli tak, to jakie.
+Odp: Wartość gamma ma wpływ na na obliczenia nagrody, którą zdobywa się za przejście na kolejny stan.
+
+
+
+Zadanie 3
+
+Wykonać to samo ćwiczenie co w zadaniu 1 ale dla jeziora o rozmiarze 8 x 8 i wartościach gamma [0, 0.2, 0.4, 0.6, 0.8, 1]. Sprawdzić działanie metody value_iteration_2 na samym dole. Czym się różni metoda value_iteration od value_iteration_2?
+Odp: Metoda value_iteration_2 jest urozmaicona o dodatkowe obliczenia, które mają wpływ na jej skompikowanie oraz czas trwania. Ma wpływ na wybieranie najlepszej trasy.
